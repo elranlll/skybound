@@ -1,0 +1,76 @@
+body {
+    position: relative;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  /* Container Fade-in Animation */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+   
+
+
+
+
+    .navbar-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .navbar-logo img {
+      width: 50px; /* Logo size */
+      height: auto;
+    }
+
+    .navbar-logo h1 {
+      font-size: 24px;
+      font-style: italic;
+      color: black;
+      margin: 0;
+    }
+
+    /* Background images */
+    .bgplane {
+      position: absolute;
+      top: 80px; /* Keeps the first background image in place */
+      width: 100%;
+      display: flex;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      object-fit: contain;
+      z-index: -1; /* Ensure the background is behind everything else */
+    }
+
+    .skybound {
+  position: absolute;
+  left: 60px;
+  top: -7px;
+  height: 60%;  /* Reduced height */
+  width: 20%;   /* Reduced width */
+
+}
+
+
+
